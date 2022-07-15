@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+    
+  }
+  body {
+    font-family: "Montserrat";
+  }
+  section {
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #00000010;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .form-group {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(128, 128, 128, 0.199);
+    margin-top: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  button[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: "Montserrat";
+    color: rgb(27, 166, 247);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease background-color;
+  }
+  button[type="submit"]:hover {
+    background-color: rgb(214, 226, 236);
+  }
+  #status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  #status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+  }
+  #status.error {
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+  }
+  @keyframes status {
+    0% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    90% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+  
+
+
+
+/* index.html starts */
+.banner_div1{
+  height:350px;
+  width:80%;
+  display:flex;
+  flex-direction:column;
+}
+.banner_div1_inner{
+  padding:50px;
+  height:250px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-center;
+}
+#section{
+  height: 60vh;
+  background-image: url('images/guille-alvarez-IcI3FizU9Cw-unsplash.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.banner_p{
+   text-shadow: white 0px 0px 10px
+}
+ h1{
+    font-family: 'Cabin', sans-serif;
+ }
+ .appoint_banner_a{
+  text-decoration:none;
+  color:#fff;
+  font-size:1.2rem;
+ }
+ .appoint_banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:25px;
+    width: 265px;
+    font-size: 15px;
+    padding: 18px 40px;
+    background: #010066;
+    border-radius: 4px;    
+ }
+ .contact-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:25px;
+  width: 265px;
+  font-size: 15px;
+  padding: 18px 40px;
+  background: #9A0000;
+  border-radius: 4px;
+ }
+ .img{
+  border-radius: 8px;
+ }
+ .img:hover{
+  transition: all 0.6s;
+  transform: scale(1.1);
+ }
+/* barnds section inside of index.html */
+.brands_section{
+  height:20vh;
+  background:#fff;
+  padding-top:15px;
+  margin-bottom: 5px;
+}
+.brands_section_div{
+  height:150px;
+  width:80%;
+  display:flex;
+  justify-content:flex-start;
+  align-items:flex-start;
+  padding:10px 10px;
+}
+.brands_section_div2{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items:center;
+  width:80%;
+  height:200px;
+}
+/* brands section inside of index.html ends */
+/* index.html ends */
+
+
+
+
+/* mail.html page starts */
+.container_mail{
+  padding-left:200px;
+  padding-right:200px;
+  padding-top:100px;
+  padding-bottom:150px;
+}
+.mail_inner_div1{
+  display:flex;
+  flex-direction:column;
+}
+.main_inner_div2{
+  display:flex;
+  justify-content:space-between;
+}
+.form{
+  display:flex;
+  flex-direction:column;
+}
+.form_input{
+  border: none;
+  height: 70px;
+}
+.form_textarea{
+  border: none;
+}
+.form_textarea:focus{
+  outline: none;
+  box-shadow:  -6px 0 white,         /*Left masking shadow*/
+  6px 0 white,          /*Right masking shadow*/
+  0 4px 2px -3px darkblue; /*The real (slim) shadow*/
+}
+.form_input:focus{
+  outline: none;
+  box-shadow:  -6px 0 white,         /*Left masking shadow*/
+  6px 0 white,          /*Right masking shadow*/
+  0 4px 2px -3px darkblue; /*The real (slim) shadow*/
+}
+label{
+  margin-top: 5px;
+}
+/* mail.html ends */
+
+
+
+
+/* services.html starts */
+/* image service */
+.container1{
+  position: relative;
+  text-align: center;
+  width: 50%;
+}
+.overlay1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: white;
+  padding: 30px;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+/* image service */
+.services_section{
+  height: 100vh;
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.services_section_div1{
+  height: 25%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.services_section_div2{
+  height:75%;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  padding:5px;
+  width: 100vw;
+}
+/* services.html ends */
+
+
+
+
+
+
+
